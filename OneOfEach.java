@@ -7,9 +7,10 @@ public class OneOfEach {
 	public static void main (String[] args) {
 		boolean boy = false;
 		boolean girl = false;
+		int numOfChildren = 0;
 		
 		while (!(boy&&girl)) {
-
+		numOfChildren++;	
 		int gender = (int)(Math.random()*2);
 
 		if (gender==0) {
@@ -22,5 +23,7 @@ public class OneOfEach {
 		}
 			
 		}
+		System.out.println();
+		System.out.println("You made it... and you now have " + numOfChildren + " children.");
 	}
 }
