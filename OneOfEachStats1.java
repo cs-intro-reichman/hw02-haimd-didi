@@ -15,7 +15,7 @@ public class OneOfEachStats1 {
 		
 		for(int i=0;i<T;i++){
 
-		String children = "";
+		int children = 0;
 
 		boolean boy = false;
 		boolean girl = false;
@@ -25,21 +25,21 @@ public class OneOfEachStats1 {
 		int gender = (int)(Math.random()*2);
 
 		if (gender==0) {
-			children+="b";
+			children++;
 			boy = true;
 		} 
 		else {
-			children+="g";
+			children++;
 			girl = true;
 		}
 			
 		}	
-		allChildren+=children.length();
+		allChildren+=children;
 
-		if(children.length()==2){
+		if(children==2){
 			families2++;
 		} 
-		else if(children.length()==3){
+		else if(children==3){
 			families3++;
 		} else{
 			families4++;
